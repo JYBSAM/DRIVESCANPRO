@@ -26,7 +26,6 @@ import {
   MessageSquare,
   ChevronRight,
   Globe,
-  // Fix: Added missing icon imports for InstalacionView
   Settings,
   CheckCircle2
 } from 'lucide-react';
@@ -190,12 +189,12 @@ const SolucionesView = () => (
       <div className="lg:w-1/2 bg-slate-900 rounded-[3rem] p-8 border border-white/5 shadow-2xl">
         <div className="flex gap-4 mb-6"><div className="w-3 h-3 rounded-full bg-rose-500"></div><div className="w-3 h-3 rounded-full bg-amber-500"></div><div className="w-3 h-3 rounded-full bg-emerald-500"></div></div>
         <div className="space-y-4 font-mono text-[10px] text-blue-400 opacity-60">
-          <p>> Analizando Guía_77182.pdf...</p>
-          <p className="text-emerald-400">> IA: Folio detectado 77182</p>
-          <p className="text-emerald-400">> IA: Total bultos: 12 (manuscrito)</p>
-          <p className="text-emerald-400">> IA: Destino: Las Condes 12900</p>
-          <p className="text-blue-500">> Sincronizando con Google Sheets...</p>
-          <p className="text-white font-bold">> STATUS: COMPLETADO ✓</p>
+          <p>&gt; Analizando Guía_77182.pdf...</p>
+          <p className="text-emerald-400">&gt; IA: Folio detectado 77182</p>
+          <p className="text-emerald-400">&gt; IA: Total bultos: 12 (manuscrito)</p>
+          <p className="text-emerald-400">&gt; IA: Destino: Las Condes 12900</p>
+          <p className="text-blue-500">&gt; Sincronizando con Google Sheets...</p>
+          <p className="text-white font-bold">&gt; STATUS: COMPLETADO ✓</p>
         </div>
       </div>
     </div>
@@ -232,7 +231,7 @@ const InstalacionView = () => (
         <Users className="text-blue-500" size={32} />
         <h4 className="text-xl font-bold text-white uppercase">Soporte y Capacitación</h4>
         <p className="text-slate-400 text-sm font-bold uppercase leading-relaxed">Nuestro equipo no solo instala, capacitamos a tus jefes de bodega para que entiendan cómo leer las alertas de la IA y optimizar el flujo.</p>
-        <button className="flex items-center gap-3 text-white font-bold text-[10px] uppercase tracking-widest hover:text-blue-400 transition-colors">
+        <button className="flex items-center gap-3 text-white font-bold text-[10px] uppercase tracking-widest hover:text-blue-400 transition-all duration-300">
           Descargar manual de implementación <ChevronRight size={14} />
         </button>
       </div>
