@@ -80,7 +80,6 @@ const ImpactMetric = ({ icon, title, before, after, percentage }: { icon: React.
 const InicioView = ({ onStart, setActivePage }: { onStart: () => void, setActivePage: (p: SubPage) => void }) => (
   <div className="space-y-32 page-transition">
     <div className="max-w-7xl mx-auto px-8 text-center space-y-10 py-12 relative">
-      {/* Resplandor Hero */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-blue-600/10 blur-[120px] rounded-full -z-10 animate-pulse"></div>
 
       <div className="inline-flex items-center gap-3 px-6 py-2 bg-blue-500/10 border border-blue-500/20 rounded-full">
@@ -189,12 +188,12 @@ const SolucionesView = () => (
       <div className="lg:w-1/2 bg-slate-900 rounded-[3rem] p-8 border border-white/5 shadow-2xl">
         <div className="flex gap-4 mb-6"><div className="w-3 h-3 rounded-full bg-rose-500"></div><div className="w-3 h-3 rounded-full bg-amber-500"></div><div className="w-3 h-3 rounded-full bg-emerald-500"></div></div>
         <div className="space-y-4 font-mono text-[10px] text-blue-400 opacity-60">
-          <p>{" > "} Analizando Guía_77182.pdf...</p>
-          <p className="text-emerald-400">{" > "} IA: Folio detectado 77182</p>
-          <p className="text-emerald-400">{" > "} IA: Total bultos: 12 (manuscrito)</p>
-          <p className="text-emerald-400">{" > "} IA: Destino: Las Condes 12900</p>
-          <p className="text-blue-500">{" > "} Sincronizando con Google Sheets...</p>
-          <p className="text-white font-bold">{" > "} STATUS: COMPLETADO ✓</p>
+          <p>&gt; Analizando Guía_77182.pdf...</p>
+          <p className="text-emerald-400">&gt; IA: Folio detectado 77182</p>
+          <p className="text-emerald-400">&gt; IA: Total bultos: 12 (manuscrito)</p>
+          <p className="text-emerald-400">&gt; IA: Destino: Las Condes 12900</p>
+          <p className="text-blue-500">&gt; Sincronizando con Google Sheets...</p>
+          <p className="text-white font-bold">&gt; STATUS: COMPLETADO ✓</p>
         </div>
       </div>
     </div>
@@ -347,7 +346,6 @@ const Landing: React.FC<LandingProps> = ({ onStart }) => {
 
   return (
     <div className="min-h-screen relative font-sans overflow-hidden">
-      {/* Resplandor Global de Fondo */}
       <div className="fixed inset-0 overflow-hidden -z-20 pointer-events-none">
         <div className="absolute top-[-10%] right-[-10%] w-[800px] h-[800px] bg-blue-600/10 blur-[150px] rounded-full"></div>
         <div className="absolute bottom-[-10%] left-[-10%] w-[800px] h-[800px] bg-purple-600/10 blur-[150px] rounded-full"></div>
