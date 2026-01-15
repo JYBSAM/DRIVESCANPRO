@@ -100,6 +100,10 @@
   }
 }
 </script>
+<script>
+    // Polyfill de seguridad para el objeto process en el navegador
+    window.process = window.process || { env: { API_KEY: "" } };
+</script>
 </head>
 <body>
     <div class="aurora">
@@ -108,5 +112,7 @@
       <div class="aurora-blob bg-cyan-900" style="top: 40%; left: 30%; animation-delay: -15s; width: 600px; height: 600px;"></div>
     </div>
     <div id="root"></div>
+    <!-- Carga del punto de entrada de la aplicación -->
+    <script type="module" src="index.tsx"></script>
 </body>
 </html>

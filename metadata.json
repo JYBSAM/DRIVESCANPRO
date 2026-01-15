@@ -1,5 +1,7 @@
 {
   "name": "DriveScan Pro - Auditoría Kyocera",
   "description": "Herramienta de escritorio para auditoría masiva de guías de despacho sincronizadas con Google Drive.",
-  "requestFramePermissions": []
+  "requestFramePermissions": [
+    "camera"
+  ]
 }
